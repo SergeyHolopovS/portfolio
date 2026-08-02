@@ -6,7 +6,7 @@ export function Skills() {
   return (
     <section id="skills" className="pt-14 pb-[42px]">
       <Kicker className="mb-7">Ключевые навыки</Kicker>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-x-[clamp(24px,4vw,64px)] gap-y-7">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(min(280px,100%),1fr))] gap-x-[clamp(24px,4vw,64px)] gap-y-7">
         {siteConfig.skills.map((group) => (
           <div key={group.title}>
             <h3 className="mb-[14px] font-heading text-[22px] leading-7 font-black">

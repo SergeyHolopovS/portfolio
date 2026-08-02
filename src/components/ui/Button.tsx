@@ -10,14 +10,24 @@ const VARIANT_CLASSES: Record<ActionLink['variant'], string> = {
 interface ButtonProps extends ActionLink {
   children?: ReactNode
   className?: string
+  onClick?: () => void
 }
 
-export function Button({ href, variant, external, label, children, className = '' }: ButtonProps) {
+export function Button({
+  href,
+  variant,
+  external,
+  label,
+  children,
+  className = '',
+  onClick,
+}: ButtonProps) {
   return (
     <a
       href={href}
       target={external ? '_blank' : undefined}
       rel={external ? 'noopener' : undefined}
+      onClick={onClick}
       className={`inline-flex items-center justify-center gap-1.5 rounded-full px-4 py-2 font-heading text-sm font-black leading-tight text-text no-underline transition-colors ${VARIANT_CLASSES[variant]} ${className}`}
     >
       {children ?? label}

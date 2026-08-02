@@ -5,7 +5,7 @@ export function Hero() {
   const { hero } = siteConfig
 
   return (
-    <section className="relative pt-[112px] pb-[84px]">
+    <section className="relative pt-10 sm:pt-[112px] pb-[84px]">
       <div className="pointer-events-none absolute right-0 top-[-220px] -z-10 h-[420px] w-[420px] rounded-full bg-accent2-200" />
 
       <h1 className="ml-[-0.028em] font-heading text-[clamp(40px,5.8vw,76px)] leading-[clamp(43px,6.26vw,82px)] font-black">

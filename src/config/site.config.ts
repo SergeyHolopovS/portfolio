@@ -60,7 +60,7 @@ export const siteConfig: SiteConfig = {
       width: 'clamp(150px, 17vw, 200px)',
       numberSize: 'clamp(30px, 3vw, 42px)',
       padding: 24,
-      bg: 'accent-200',
+      bg: 'neutral-200',
       fg: 'accent-700',
       offsetY: 28,
     },
@@ -70,7 +70,7 @@ export const siteConfig: SiteConfig = {
       width: 'clamp(180px, 23vw, 290px)',
       numberSize: 'clamp(34px, 3.4vw, 48px)',
       padding: 32,
-      bg: 'accent2-300',
+      bg: 'accent2-200',
       fg: 'accent2-800',
       offsetY: -14,
     },
@@ -308,7 +308,7 @@ export const siteConfig: SiteConfig = {
   contact: {
     heading: 'Ищу работу или стажировку во фронтенде',
     description:
-      'Санкт-Петербург, СПбГМТУ — факультет цифровых промышленных технологий, бакалавриат, 2 курс. Открыт к удалёнке и офису. Напишите — отвечу быстро.',
+      'Санкт-Петербург, СПбГМТУ — факультет цифровых промышленных технологий, бакалавриат, 2 курс. Открыт к удалёнке и офису. Напишите — отвечу быстро. Уже есть опыт коммерческой разработки на React и Next.js, а на стороне бэкенда работал с Kotlin и Spring Boot. Рассматриваю стажировку, частичную и полную занятость — опишите задачу, и отвечу с конкретикой по срокам.',
     actions: [
       {
         label: 'gssdsudas@gmail.com',
