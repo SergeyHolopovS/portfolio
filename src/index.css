@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens lifted from the "Organic" design system (styles.css) this
+ * portfolio was built from. Edit values here to re-theme the whole site —
+ * every component consumes these via Tailwind's generated `bg-*`, `text-*`,
+ * `border-*` and `shadow-*` utilities (e.g. `bg-accent-100`, `text-accent2-700`).
+ */
+@theme {
+  --color-bg: #f5ead8;
+  --color-surface: #ebddc5;
+  --color-text: #201e1d;
+  --color-divider: color-mix(in srgb, #201e1d 16%, transparent);
+
+  --color-neutral-100: #f9f4ed;
+  --color-neutral-200: #eee7db;
+  --color-neutral-300: #dcd3c4;
+  --color-neutral-400: #c0b6a5;
+  --color-neutral-500: #a19786;
+  --color-neutral-600: #82796a;
+  --color-neutral-700: #645c50;
+  --color-neutral-800: #474238;
+  --color-neutral-900: #2e2b25;
+
+  --color-accent: #c67139;
+  --color-accent-100: #fff2eb;
+  --color-accent-200: #ffe1d0;
+  --color-accent-300: #ffc6a5;
+  --color-accent-400: #f6a06b;
+  --color-accent-500: #d67f48;
+  --color-accent-600: #b2622d;
+  --color-accent-700: #8c491a;
+  --color-accent-800: #643312;
+  --color-accent-900: #402310;
+
+  --color-accent2: #7a8a5e;
+  --color-accent2-100: #f0fae1;
+  --color-accent2-200: #e1eecc;
+  --color-accent2-300: #ccdbb2;
+  --color-accent2-400: #aebf92;
+  --color-accent2-500: #8fa073;
+  --color-accent2-600: #728157;
+  --color-accent2-700: #56633f;
+  --color-accent2-800: #3d472b;
+  --color-accent2-900: #272e1b;
+
+  --font-heading: "Nunito", system-ui, sans-serif;
+  --font-body: "Figtree", system-ui, sans-serif;
+
+  /* The source system runs every spacing step at 1.10x the standard 4px
+     grid (4.4/8.8/13.2/17.6...). One multiplier here re-scales every
+     Tailwind spacing utility (p-*, gap-*, w-*, ...) to match. */
+  --spacing: 0.275rem;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-card: 32.2px;
+  --radius-patch: 56px;
+
+  --shadow-sm: 0 1px 2px color-mix(in srgb, #2e2b25 14%, transparent);
+  --shadow-md: 0 3px 10px color-mix(in srgb, #2e2b25 16%, transparent);
+  --shadow-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  text-wrap: pretty;
+  overflow-x: clip;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+}
