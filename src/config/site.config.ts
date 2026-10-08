@@ -65,8 +65,8 @@ export const siteConfig: SiteConfig = {
       offsetY: 28,
     },
     {
-      value: '4',
-      label: 'Больших проекта на React и Next.js',
+      value: '5',
+      label: 'Больших проектов на React, Next.js и Nuxt',
       width: 'clamp(180px, 23vw, 290px)',
       numberSize: 'clamp(34px, 3.4vw, 48px)',
       padding: 32,
@@ -187,6 +187,24 @@ export const siteConfig: SiteConfig = {
         link: {
           label: 'github.com/CineNetwork',
           href: 'https://github.com/CineNetwork/Frontend',
+        },
+      },
+      {
+        kicker: 'Фронтенд на Nuxt',
+        title: 'EasyGuide',
+        description:
+          'Платформа авторских экскурсий: туристы ищут и бронируют туры, гиды публикуют маршруты, ведут расписание и принимают заявки. SSR на Nuxt 4, каталог с фильтрами в URL, JWT в cookie с автообновлением токенов — параллельные запросы и вкладки ждут одно обновление через Web Locks API.',
+        tags: [
+          { label: 'Nuxt 4', tone: 'accent2' },
+          { label: 'Vue 3', tone: 'accent2' },
+          { label: 'TypeScript', tone: 'accent' },
+          { label: 'Tailwind CSS', tone: 'outline' },
+          { label: 'SSR', tone: 'outline' },
+          { label: 'JWT', tone: 'outline' },
+        ],
+        link: {
+          label: 'github.com/SergeyHolopovS/easyguide-nuxtjs',
+          href: 'https://github.com/SergeyHolopovS/easyguide-nuxtjs',
         },
       },
       {
